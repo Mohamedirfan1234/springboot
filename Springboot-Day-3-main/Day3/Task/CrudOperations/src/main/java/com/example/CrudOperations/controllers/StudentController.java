@@ -31,7 +31,6 @@ public class StudentController {
     public List<StudentModel> getStudents(){
         return ss.getAllStudents();
     }
-
     @GetMapping("/{id}")
     public StudentModel getStudentById(@PathVariable int id){
         return ss.getStudentById(id);
